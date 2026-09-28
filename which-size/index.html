@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>500g or 1kg? Same honey, one question &mdash; Aussie Bee&rsquo;s Knees Honey</title>
+<meta name="description" content="The two real jar sizes of Aussie Bee’s Knees red gum honey, side by side.">
+<meta name="robots" content="noindex">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Karla:wght@300..700&display=swap">
+<style>
+/* ---- primitive ---------------------------------------------------------- */
+:root{
+  --paper:#FBF8F2; --bone:#F4EFE5; --ink:#2B211A; --dark:#231C16;
+  --russet:#9C4A26; --russet-soft:#BC7040; --honey:#C8811B;
+  --sage:#5E6553; --sage-tint:#E3E5D9; --line:rgba(43,33,26,.14);
+
+/* ---- semantic ----------------------------------------------------------- */
+  --bg:var(--paper); --bg-well:var(--bone); --bg-invert:var(--dark);
+  --fg:var(--ink); --fg-quiet:var(--sage); --fg-invert:var(--paper);
+  --accent:var(--russet); --accent-hover:var(--russet-soft); --emphasis:var(--honey);
+  --rule:var(--line);
+
+/* ---- component ---------------------------------------------------------- */
+  --btn-bg:var(--ink); --btn-fg:var(--paper); --btn-bg-hover:var(--russet);
+  --btn-ring:var(--russet); --card-bg:var(--bone); --card-rule:var(--rule);
+  --focus:var(--russet);
+
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Karla',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gutter:20px; --measure:34rem;
+}
+@media (min-width:640px){ :root{ --gutter:32px; } }
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:var(--sans); font-size:17px; line-height:1.62;
+  font-weight:400; overflow-x:hidden;
+  text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;
+}
+img{ max-width:100%; height:auto; display:block; }
+h1,h2,h3{ font-family:var(--serif); font-weight:600; letter-spacing:-.012em; margin:0; }
+h1{ font-size:clamp(2rem,7.2vw,3.375rem); line-height:1.06; }
+h2{ font-size:clamp(1.5rem,4.2vw,2rem); line-height:1.14; margin-bottom:18px; }
+h3{ font-size:1.25rem; line-height:1.24; }
+p{ margin:0 0 1.1em; }
+p:last-child{ margin-bottom:0; }
+a{ color:var(--accent); text-underline-offset:3px; }
+a:hover{ color:var(--accent-hover); }
+:focus-visible{ outline:3px solid var(--focus); outline-offset:3px; border-radius:2px; }
+
+.wrap{ width:100%; max-width:1080px; margin:0 auto; padding:0 var(--gutter); }
+.narrow{ max-width:680px; }
+.measure{ max-width:var(--measure); }
+
+/* ---- masthead ----------------------------------------------------------- */
+.mast{ padding:22px 0 6px; }
+.mast .wordmark{
+  font-family:var(--serif); font-size:15px; font-weight:600; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--fg); display:flex; align-items:center; gap:10px;
+}
+.mast .wordmark svg{ width:22px; height:22px; flex:none; }
+
+/* ---- hero --------------------------------------------------------------- */
+.hero{ padding:34px 0 8px; }
+.eyebrow{
+  font-size:13px; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--accent); margin:0 0 14px;
+}
+.lede{ font-size:clamp(1.0625rem,2.6vw,1.25rem); color:var(--fg); margin-top:18px; }
+.lede.quiet{ color:var(--fg-quiet); }
+
+/* ---- the one button ----------------------------------------------------- */
+.cta{ margin-top:30px; display:flex; flex-wrap:wrap; gap:14px 18px; align-items:center; }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  min-height:52px; padding:14px 26px; border-radius:2px;
+  background:var(--btn-bg); color:var(--btn-fg); text-decoration:none;
+  font-family:var(--sans); font-size:16px; font-weight:600; letter-spacing:.01em;
+  border:1px solid var(--btn-bg);
+  transition:background 180ms ease-out,border-color 180ms ease-out,transform 160ms ease-out;
+}
+.btn:hover{ background:var(--btn-bg-hover); border-color:var(--btn-bg-hover); color:var(--btn-fg); }
+.btn:active{ transform:translateY(1px); }
+.btn svg{ width:17px; height:17px; flex:none; }
+.tel{
+  min-height:52px; display:inline-flex; align-items:center; gap:9px;
+  font-size:16px; font-weight:600; color:var(--fg); text-decoration:none;
+}
+.tel svg{ width:17px; height:17px; }
+.tel:hover{ color:var(--accent); }
+.note{ font-size:15px; color:var(--fg-quiet); margin-top:16px; max-width:34rem; }
+
+/* ---- sections ----------------------------------------------------------- */
+section{ padding:clamp(40px,7vw,72px) 0; }
+.hero{ padding-top:20px; }
+.well{ background:var(--bg-well); }
+.rule{ height:1px; background:var(--rule); border:0; margin:0; }
+.kicker{
+  font-size:13px; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--fg-quiet); margin:0 0 12px;
+}
+
+/* three points, never more */
+.points{ display:grid; gap:28px; margin:34px 0 0; padding:0; list-style:none; }
+@media (min-width:860px){ .points{ grid-template-columns:repeat(3,1fr); gap:34px; } }
+.points h3{ margin:14px 0 8px; }
+.points p{ color:var(--fg-quiet); font-size:16px; }
+.points svg{ width:26px; height:26px; color:var(--accent); }
+
+/* myth / fact */
+.mf{ display:grid; gap:26px; margin:34px 0 0; padding:0; list-style:none; }
+.mf li{ border-top:1px solid var(--rule); padding-top:22px; }
+.mf .myth{
+  font-family:var(--serif); font-size:1.125rem; color:var(--fg-quiet);
+  text-decoration:line-through; text-decoration-thickness:1.5px; margin:0 0 10px;
+}
+.mf .fact{ margin:0; font-size:17px; }
+.mf .fact strong{ font-weight:700; }
+
+/* numbered steps */
+.steps{ counter-reset:s; margin:34px 0 0; padding:0; list-style:none; }
+.steps li{
+  counter-increment:s; display:grid; grid-template-columns:44px 1fr; gap:18px;
+  border-top:1px solid var(--rule); padding:22px 0;
+}
+.steps li::before{
+  content:counter(s); font-family:var(--serif); font-size:1.75rem; font-weight:600;
+  color:var(--emphasis); line-height:1;
+}
+.steps h3{ margin:0 0 6px; font-size:1.0625rem; }
+.steps p{ margin:0; color:var(--fg-quiet); font-size:16px; }
+
+/* two-up compare */
+.compare{ display:grid; gap:22px; margin:34px 0 0; padding:0; list-style:none; }
+@media (min-width:760px){ .compare{ grid-template-columns:1fr 1fr; gap:26px; } }
+.compare li{
+  background:var(--card-bg); border:1px solid var(--card-rule); border-radius:3px;
+  padding:26px 24px 28px; display:flex; flex-direction:column;
+}
+.compare .size{
+  font-family:var(--serif); font-size:2.25rem; font-weight:600; line-height:1; margin:0 0 4px;
+}
+.compare .who{ font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; font-weight:600; }
+.compare p{ font-size:16px; color:var(--fg-quiet); }
+.compare figure{ margin:0 0 20px; display:flex; align-items:flex-end; min-height:236px; }
+.compare img{ width:auto; }
+
+/* label quote */
+blockquote{
+  margin:30px 0 0; padding:24px 26px; background:var(--card-bg);
+  border-left:3px solid var(--accent); border-radius:2px;
+  font-family:var(--serif); font-size:1.125rem; line-height:1.5;
+}
+blockquote cite{ display:block; margin-top:12px; font-family:var(--sans); font-style:normal; font-size:14px; color:var(--fg-quiet); }
+
+/* honest list */
+.plain{ margin:26px 0 0; padding:0; list-style:none; }
+.plain li{ position:relative; padding:0 0 12px 26px; font-size:16px; color:var(--fg-quiet); }
+.plain li::before{
+  content:''; position:absolute; left:2px; top:.62em; width:9px; height:1.5px; background:var(--accent);
+}
+
+/* jar figures */
+.jar{ margin:38px 0 0; display:flex; justify-content:center; position:relative; }
+.jar img{ max-height:min(56vh,460px); width:auto; position:relative; z-index:1; }
+.jar::before{
+  content:''; position:absolute; z-index:0; left:50%; top:46%; transform:translate(-50%,-50%);
+  width:min(420px,84%); aspect-ratio:1; border-radius:50%;
+  background:radial-gradient(circle,rgba(200,129,27,.20) 0%,rgba(200,129,27,0) 70%);
+}
+.jar.pair img{ max-height:min(44vh,360px); }
+.jar.pair{ gap:0; align-items:flex-end; }
+.jar figcaption{ display:none; }
+
+.scene{ margin:34px 0 0; width:100%; }
+.scene img{ width:100%; height:auto; display:block; }
+@media (min-width:900px){
+  .scene{ max-width:1080px; margin-left:auto; margin-right:auto; padding:0 var(--gutter); }
+  .scene img{ border-radius:3px; }
+}
+
+/* venn */
+.venn{ margin:30px auto 0; max-width:520px; }
+.venn svg{ width:100%; height:auto; }
+
+/* closer + footer */
+.closer{ background:var(--bg-invert); color:var(--fg-invert); }
+.closer h2{ color:var(--fg-invert); }
+.closer p{ color:rgba(251,248,242,.82); }
+.closer .btn{ background:var(--paper); color:var(--ink); border-color:var(--paper); }
+.closer .btn:hover{ background:var(--emphasis); border-color:var(--emphasis); color:var(--dark); }
+.closer .tel{ color:var(--fg-invert); }
+.closer .tel:hover{ color:var(--emphasis); }
+.closer .note{ color:rgba(251,248,242,.62); }
+footer{ padding:38px 0 46px; font-size:14px; color:var(--fg-quiet); }
+footer p{ margin:0 0 8px; max-width:46rem; }
+footer a{ color:var(--fg-quiet); }
+footer .contact{ color:var(--fg); }
+
+/* ---- motion ------------------------------------------------------------- */
+.js .reveal{ opacity:0; transform:translateY(12px); }
+.js .reveal.in{ opacity:1; transform:none; transition:opacity 420ms ease-out,transform 420ms ease-out; }
+@media (prefers-reduced-motion:reduce){
+  .js .reveal,.js .reveal.in{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .btn,.tel,a{ transition:none !important; }
+}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap"><p class="wordmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.6 20 7v10l-8 4.4L4 17V7z"/><path d="M12 8.4 15.6 10.4v4.2L12 16.6 8.4 14.6v-4.2z"/></svg>Aussie Bee&rsquo;s Knees Honey</p></div></header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Two sizes</p>
+      <h1>500g or 1kg?</h1>
+      <p class="lede measure">Same honey, same label, same harvest. The only real question is how quickly you get through a jar.</p>
+      
+      <div class="cta">
+        <a class="btn" href="mailto:aussiebeeskneeshoney@gmail.com?subject=Red%20gum%20honey%20%E2%80%94%20500g%20or%201kg%2C%20and%20what%20does%20each%20cost%3F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 7 8.4 6 8.4-6"/></svg>Ask what a jar costs</a>
+        <a class="tel" href="tel:+61434400504"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.2 3.5h3l1.5 4-2 1.4a10.6 10.6 0 0 0 6.4 6.4l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 4.2 5.7a2 2 0 0 1 2-2.2z"/></svg>0434 400 504</a>
+      </div>
+      <p class="note">Prices and postage are not published yet. Ask, and you get a straight answer from the people who jar it &mdash; not a newsletter.</p>
+    </div>
+    <figure class="scene"><img src="hero.webp" width="1344" height="1411" alt="The 1kg and 500g jars side by side on a timber shelf" fetchpriority="high"></figure>
+    <div class="wrap">
+      
+    </div>
+  </section>
+  <hr class="rule">
+  <section class="reveal"><div class="wrap"><p class="kicker">Which one to pick</p><ul class="compare"><li><p class="size">500g</p><p class="who">The first jar</p><p>Enough to find out whether a single-variety honey is your thing. It sits on a cupboard shelf without a fight, and it is the smaller of the two jars on the label.</p></li><li><p class="size">1kg</p><p class="who">The one to commit to</p><p>The jar to buy if you already know you will finish it. Same square glass and brushed gold lid, twice the honey, one lid to lose instead of two.</p></li></ul></div></section>
+  <section class="well reveal"><div class="wrap narrow"><p class="kicker">What is the same</p><h2>Everything except the amount</h2><p>Both jars are the same red gum honey, raw, sourced within Australia and predominantly harvested from apiary farms in northern Victoria. Both are square glass with a brushed gold screw lid. Both say the variety on the front.</p><p>Either jar may arrive with the top set solid. That is the honey doing what raw honey does, and it softens in a bowl of warm water.</p></div></section>
+  <section class="closer reveal">
+    <div class="wrap narrow">
+      <h2>One question left, and it&rsquo;s yours to ask.</h2>
+      <p>Send one line and you will be told what a jar costs, what postage is, and whether it can reach you. No basket, no account, no newsletter.</p>
+      
+      <div class="cta">
+        <a class="btn" href="mailto:aussiebeeskneeshoney@gmail.com?subject=Red%20gum%20honey%20%E2%80%94%20500g%20or%201kg%2C%20and%20what%20does%20each%20cost%3F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 7 8.4 6 8.4-6"/></svg>Ask what a jar costs</a>
+        <a class="tel" href="tel:+61434400504"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.2 3.5h3l1.5 4-2 1.4a10.6 10.6 0 0 0 6.4 6.4l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 4.2 5.7a2 2 0 0 1 2-2.2z"/></svg>0434 400 504</a>
+      </div>
+      <p class="note">Prices and postage are not published yet. Ask, and you get a straight answer from the people who jar it &mdash; not a newsletter.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>About the picture on this page.</strong> It is an AI-generated image of Aussie Bee&rsquo;s Knees Honey&rsquo;s own jar, made using their photograph as the reference. The wording on the label matches the real jar; the artwork around it is redrawn, and the honey is lit better than a phone photograph manages. It will be replaced with their own photography.</p>
+    <p class="contact">aussiebeeskneeshoney@gmail.com &nbsp;&middot;&nbsp; 0434 400 504 &nbsp;&middot;&nbsp; Fawkner, Victoria</p>
+    <p>Aussie Bee&rsquo;s Knees Honey. Page built for a specific advert &mdash; if you arrived here another way, the honey is the same.</p>
+  </div>
+</footer>
+<script>
+/* Entry motion, hand-rolled: no external JavaScript may load on these pages.
+
+   A plain IntersectionObserver has a blind spot — jump the scroll position in one
+   move (anchor, restored position, fast flick) and any section skipped over never
+   intersects, so it stays at opacity 0 forever. Two blocks were invisible in the
+   27 Sep QA screenshots for exactly that reason. This sweeps instead: anything at
+   or above the fold line is revealed, however the reader got there.
+
+   Reduced motion never attaches a listener and the CSS paints the final state. */
+(function () {
+  var items = [].slice.call(document.querySelectorAll('.reveal'));
+  if (!items.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+
+  var ticking = false;
+  function sweep() {
+    ticking = false;
+    var line = window.innerHeight * 0.92;
+    var shown = 0;
+    items = items.filter(function (el) {
+      if (el.getBoundingClientRect().top > line) return true;
+      var delay = shown * 60; shown += 1;
+      setTimeout(function () { el.classList.add('in'); }, delay);
+      return false;
+    });
+  }
+  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(sweep); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  sweep();
+  window.addEventListener('load', sweep);
+}());
+</script>
+</body>
+</html>
